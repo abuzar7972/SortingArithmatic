@@ -11,4 +11,6 @@ c=$(($c+$a/$b))
 dict[2]="$c"
 d=$(($a%$b+$c))
 dict[3]="$d"
-
+array[${!dict[0]}]="${dict[0]}"
+array[${!dict[1]}]="${dict[1]}"
+array[${!dict[2]}]="${dict[2]}"
